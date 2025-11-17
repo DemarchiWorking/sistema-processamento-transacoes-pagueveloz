@@ -1,0 +1,6 @@
+@PagueVeloz.CoreFinanceiro.Api_HostAddress = http://localhost:5004
+
+GET {{PagueVeloz.CoreFinanceiro.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

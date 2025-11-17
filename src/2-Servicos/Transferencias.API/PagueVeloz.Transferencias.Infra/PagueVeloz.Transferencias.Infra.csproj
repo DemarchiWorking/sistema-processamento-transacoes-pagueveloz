@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\PagueVeloz.Transferencias.Aplicacao\PagueVeloz.Transferencias.Aplicacao.csproj" />
+    <ProjectReference Include="..\PagueVeloz.Transferencias.Dominio\PagueVeloz.Transferencias.Dominio.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\PagueVeloz.CoreFinanceiro.Aplicacao\PagueVeloz.CoreFinanceiro.Aplicacao.csproj" />
+    <ProjectReference Include="..\PagueVeloz.CoreFinanceiro.Dominio\PagueVeloz.CoreFinanceiro.Dominio.csproj" />
+    <ProjectReference Include="..\..\..\3-Crosscutting\Eventos\PagueVeloz.Eventos.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

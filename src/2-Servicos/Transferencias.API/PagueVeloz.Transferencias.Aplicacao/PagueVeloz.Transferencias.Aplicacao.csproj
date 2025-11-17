@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\PagueVeloz.Transferencias.Dominio\PagueVeloz.Transferencias.Dominio.csproj" />
+    <ProjectReference Include="..\..\..\3-Crosscutting\Eventos\PagueVeloz.Eventos.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
