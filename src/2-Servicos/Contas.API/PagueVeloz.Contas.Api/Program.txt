@@ -1,0 +1,78 @@
+using MassTransit;
+using Microsoft.EntityFrameworkCore;
+using PagueVeloz.CoreFinanceiro.Aplicacao; // Para IApplicationMarker
+using PagueVeloz.CoreFinanceiro.Aplicacao.Eventos;
+using PagueVeloz.CoreFinanceiro.Aplicacao.Interfaces;
+using PagueVeloz.CoreFinanceiro.Infra.Data;
+using PagueVeloz.CoreFinanceiro.Infra.Data.Repositories;
+
+var builder = WebApplication.CreateBuilder(args);
+var services = builder.Services;
+var configuration = builder.Configuration;
+
+// 1. REGISTRAR SERVIÇOS DA API (Swagger)
+services.AddEndpointsApiExplorer();
+services.AddSwaggerGen();
+
+// 2. REGISTRAR BANCO DE DADOS
+services.AddDbContext<CoreFinanceiroDbContext>(options =>
+    options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+
+// 3. REGISTRAR SERVIÇOS DE INVERSÃO DE DEPENDÊNCIA (DI)
+services.AddScoped<IContaRepository, ContaRepository>();
+services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+// 4. REGISTRAR MEDIATR
+services.AddMediatR(cfg =>
+    cfg.RegisterServicesFromAssembly(typeof(IApplicationMarker).Assembly)); 
+
+// 5. REGISTRAR MASSTRANSIT (RabbitMQ + Inbox/Outbox)
+services.AddMassTransit(busConfig =>
+{
+    // Registra o consumidor
+    busConfig.AddConsumer<ContaCriadaConsumer>();
+
+    // Registra o Outbox (para publicações)
+    busConfig.AddEntityFrameworkOutbox<CoreFinanceiroDbContext>(o =>
+    {
+        o.UseBusOutbox();
+        o.UsePostgres();
+    });
+
+    // Configura o transporte (RabbitMQ)
+    busConfig.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host(configuration["MessageBroker:Host"], "/", h =>
+        {
+            h.Username(configuration["MessageBroker:Username"]);
+            h.Password(configuration["MessageBroker:Password"]);
+        });
+
+        // Configura a fila (Endpoint)
+        cfg.ReceiveEndpoint("corefinanceiro-conta-criada", e =>
+        {
+            // Habilita o Inbox (consumo idempotente)
+            e.UseEntityFrameworkOutbox<CoreFinanceiroDbContext>(context);
+            
+            // Conecta o consumidor a esta fila
+            e.ConfigureConsumer<ContaCriadaConsumer>(context);
+        });
+    });
+});
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    // Configuração correta do Swagger
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+
+// NOTA: Os endpoints de API (como /api/transactions)
+// serão adicionados na Task 6.
+
+app.Run();

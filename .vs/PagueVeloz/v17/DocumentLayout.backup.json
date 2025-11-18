@@ -1,54 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Antonio Demarchi\\source\\repos\\Meta\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{184BEF36-B9F6-4C7E-8BB3-5843BD48FBDC}|src\\2-Servicos\\Contas.API\\PagueVeloz.Contas.Api\\PagueVeloz.Contas.Api.csproj|c:\\users\\antonio demarchi\\source\\repos\\meta\\src\\2-servicos\\contas.api\\pagueveloz.contas.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{184BEF36-B9F6-4C7E-8BB3-5843BD48FBDC}|src\\2-Servicos\\Contas.API\\PagueVeloz.Contas.Api\\PagueVeloz.Contas.Api.csproj|solutionrelative:src\\2-servicos\\contas.api\\pagueveloz.contas.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72E038BF-8D2B-408F-8F5B-89FEDB5FF471}|src\\2-Servicos\\Contas.API\\PagueVeloz.Contas.Aplicacao\\PagueVeloz.Contas.Aplicacao.csproj|c:\\users\\antonio demarchi\\source\\repos\\meta\\src\\2-servicos\\contas.api\\pagueveloz.contas.aplicacao\\comandos\\criarcontacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72E038BF-8D2B-408F-8F5B-89FEDB5FF471}|src\\2-Servicos\\Contas.API\\PagueVeloz.Contas.Aplicacao\\PagueVeloz.Contas.Aplicacao.csproj|solutionrelative:src\\2-servicos\\contas.api\\pagueveloz.contas.aplicacao\\comandos\\criarcontacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Antonio Demarchi\\source\\repos\\Meta\\src\\2-Servicos\\Contas.API\\PagueVeloz.Contas.Api\\Program.cs",
-              "RelativeDocumentMoniker": "src\\2-Servicos\\Contas.API\\PagueVeloz.Contas.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\Antonio Demarchi\\source\\repos\\Meta\\src\\2-Servicos\\Contas.API\\PagueVeloz.Contas.Api\\Program.cs",
-              "RelativeToolTip": "src\\2-Servicos\\Contas.API\\PagueVeloz.Contas.Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T03:55:38.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CriarContaCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Antonio Demarchi\\source\\repos\\Meta\\src\\2-Servicos\\Contas.API\\PagueVeloz.Contas.Aplicacao\\Comandos\\CriarContaCommandHandler.cs",
-              "RelativeDocumentMoniker": "src\\2-Servicos\\Contas.API\\PagueVeloz.Contas.Aplicacao\\Comandos\\CriarContaCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Antonio Demarchi\\source\\repos\\Meta\\src\\2-Servicos\\Contas.API\\PagueVeloz.Contas.Aplicacao\\Comandos\\CriarContaCommandHandler.cs",
-              "RelativeToolTip": "src\\2-Servicos\\Contas.API\\PagueVeloz.Contas.Aplicacao\\Comandos\\CriarContaCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T03:54:16.253Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

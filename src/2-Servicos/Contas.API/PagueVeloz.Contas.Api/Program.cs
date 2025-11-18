@@ -15,6 +15,7 @@ var configuration = builder.Configuration;
 builder.Services.AddOpenApi();
 
 //#######################
+
 services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssembly(typeof(CriarContaCommand).Assembly);
@@ -27,7 +28,34 @@ services.AddScoped<IClienteRepository, ClienteRepository>();
 services.AddScoped<IContaRepository, ContaRepository>();
 services.AddScoped<IUnitOfWork, UnitOfWork>();
 
+services.AddMassTransit(busConfig =>
+{
+    //barramento [RabbitMQ]
+    busConfig.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host(configuration["MessageBroker:Host"], "/", h =>
+        {
+            h.Username(configuration["MessageBroker:Username"]);
+            h.Password(configuration["MessageBroker:Password"]);
+        });
 
+        cfg.ConfigureEndpoints(context);
+    });
+
+    //outbox
+    //fazer o masstransit usar o EF Core como seu Outbox
+    busConfig.AddEntityFrameworkOutbox<ContasDbContext>(o =>
+    {
+        //Outbox publica evento
+        o.UseBusOutbox();
+
+        //configura o banco
+        o.UsePostgres();
+
+        //define com que frequencia o worker verificara o outbox
+        o.QueryDelay = TimeSpan.FromSeconds(10);
+    });
+});
 //#######################
 var app = builder.Build();
 

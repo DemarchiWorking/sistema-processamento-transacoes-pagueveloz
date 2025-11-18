@@ -27,7 +27,6 @@ C:\Users\Antonio Demarchi\source\repos\Meta\src\1-Gateways\ApiGateway\obj\Debug\
 C:\Users\Antonio Demarchi\source\repos\Meta\src\1-Gateways\ApiGateway\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\Antonio Demarchi\source\repos\Meta\src\1-Gateways\ApiGateway\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Antonio Demarchi\source\repos\Meta\src\1-Gateways\ApiGateway\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\Antonio Demarchi\source\repos\Meta\src\1-Gateways\ApiGateway\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Antonio Demarchi\source\repos\Meta\src\1-Gateways\ApiGateway\obj\Debug\net9.0\PagueVel.E25EAFFE.Up2Date
 C:\Users\Antonio Demarchi\source\repos\Meta\src\1-Gateways\ApiGateway\obj\Debug\net9.0\PagueVeloz.ApiGateway.dll
 C:\Users\Antonio Demarchi\source\repos\Meta\src\1-Gateways\ApiGateway\obj\Debug\net9.0\refint\PagueVeloz.ApiGateway.dll

@@ -1,0 +1,12 @@
+C:\Users\Antonio Demarchi\source\repos\Meta\src\2-Servicos\Transferencias.API\PagueVeloz.Transferencias.Dominio\bin\Debug\net9.0\PagueVeloz.Transferencias.Dominio.deps.json
+C:\Users\Antonio Demarchi\source\repos\Meta\src\2-Servicos\Transferencias.API\PagueVeloz.Transferencias.Dominio\bin\Debug\net9.0\PagueVeloz.Transferencias.Dominio.dll
+C:\Users\Antonio Demarchi\source\repos\Meta\src\2-Servicos\Transferencias.API\PagueVeloz.Transferencias.Dominio\bin\Debug\net9.0\PagueVeloz.Transferencias.Dominio.pdb
+C:\Users\Antonio Demarchi\source\repos\Meta\src\2-Servicos\Transferencias.API\PagueVeloz.Transferencias.Dominio\obj\Debug\net9.0\PagueVeloz.Transferencias.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Antonio Demarchi\source\repos\Meta\src\2-Servicos\Transferencias.API\PagueVeloz.Transferencias.Dominio\obj\Debug\net9.0\PagueVeloz.Transferencias.Dominio.AssemblyInfoInputs.cache
+C:\Users\Antonio Demarchi\source\repos\Meta\src\2-Servicos\Transferencias.API\PagueVeloz.Transferencias.Dominio\obj\Debug\net9.0\PagueVeloz.Transferencias.Dominio.AssemblyInfo.cs
+C:\Users\Antonio Demarchi\source\repos\Meta\src\2-Servicos\Transferencias.API\PagueVeloz.Transferencias.Dominio\obj\Debug\net9.0\PagueVeloz.Transferencias.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Antonio Demarchi\source\repos\Meta\src\2-Servicos\Transferencias.API\PagueVeloz.Transferencias.Dominio\obj\Debug\net9.0\PagueVeloz.Transferencias.Dominio.sourcelink.json
+C:\Users\Antonio Demarchi\source\repos\Meta\src\2-Servicos\Transferencias.API\PagueVeloz.Transferencias.Dominio\obj\Debug\net9.0\PagueVeloz.Transferencias.Dominio.dll
+C:\Users\Antonio Demarchi\source\repos\Meta\src\2-Servicos\Transferencias.API\PagueVeloz.Transferencias.Dominio\obj\Debug\net9.0\refint\PagueVeloz.Transferencias.Dominio.dll
+C:\Users\Antonio Demarchi\source\repos\Meta\src\2-Servicos\Transferencias.API\PagueVeloz.Transferencias.Dominio\obj\Debug\net9.0\PagueVeloz.Transferencias.Dominio.pdb
+C:\Users\Antonio Demarchi\source\repos\Meta\src\2-Servicos\Transferencias.API\PagueVeloz.Transferencias.Dominio\obj\Debug\net9.0\ref\PagueVeloz.Transferencias.Dominio.dll
