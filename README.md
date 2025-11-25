@@ -19,7 +19,9 @@ Rio de Janeiro  <br>
 
 
 Link: https://github.com/DemarchiWorking/sistema-processamento-transa-es-pagueveloz <br>
-Documento: https://github.com/DemarchiWorking/sistema-processamento-transacoes-pagueveloz/blob/main/DesafioPagueVeloz.docx.pdf
+Documento: https://github.com/DemarchiWorking/sistema-processamento-transacoes-pagueveloz/blob/main/DesafioPagueVeloz.docx.pdf <br>
+DockerHub: https://hub.docker.com/repository/docker/strallsbrt716/meta-pagueveloz/general <br>
+
 <br><br>
 Instalar o Docker, iniciar o ambiente virtualizado <br>
 Baixar os projetos com todos arquivos <br>
@@ -32,7 +34,9 @@ Pegue os ID’s do meta-contas_api, meta-corefinanceiro_api, meta-transferencias
 docker start f6b74e6cf2f5 c6732820e09b d65e28bca404 <br>
 Vai executar um console mostrando a porta que a aplicação está rodando. <br>
 
-# Como Executar Operações
+# Como Executar Operações <br>
+
+
 1º <br>
 http://localhost:5000/api/Clientes
 {
@@ -50,6 +54,7 @@ http://localhost:5000/api/Contas
 }
 
 3° <br>
+operation pode ser substituido por credit, debit, reserve, capture, reversal. <br>
 http://localhost:5001/api/Operacao
 {
   "operation": "credit",
