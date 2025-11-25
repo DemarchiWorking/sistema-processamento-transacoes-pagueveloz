@@ -18,9 +18,9 @@ Rio de Janeiro  <br>
 # Tutorial para Execução do Projeto .NET 9:
 
 
-Link: https://github.com/DemarchiWorking/sistema-processamento-transa-es-pagueveloz <br>
-Documento: https://github.com/DemarchiWorking/sistema-processamento-transacoes-pagueveloz/blob/main/DesafioPagueVeloz.docx.pdf <br>
-DockerHub: https://hub.docker.com/repository/docker/strallsbrt716/meta-pagueveloz/general <br>
+Link: https://github.com/DemarchiWorking/sistema-processamento-transa-es-pagueveloz <br><br>
+Documento: https://github.com/DemarchiWorking/sistema-processamento-transacoes-pagueveloz/blob/main/DesafioPagueVeloz.docx.pdf <br><br>
+DockerHub: https://hub.docker.com/r/strallsbrt716/meta-pagueveloz <br>
 
 <br><br>
 Instalar o Docker, iniciar o ambiente virtualizado <br>
