@@ -33,6 +33,7 @@ docker start f6b74e6cf2f5 c6732820e09b d65e28bca404 <br>
 Vai executar um console mostrando a porta que a aplicação está rodando. <br>
 
 # Como Executar Operações
+1º <br>
 http://localhost:5000/api/Clientes
 {
     "clienteId": "1",
@@ -40,14 +41,15 @@ http://localhost:5000/api/Clientes
 }
 
 
-1º
+2° <br>
 http://localhost:5000/api/Contas
 {
   "clienteId": "1",
   "initialBalance": 0,
   "creditLimit": 1000
 }
-2°
+
+3° <br>
 http://localhost:5001/api/Operacao
 {
   "operation": "credit",
@@ -60,10 +62,7 @@ http://localhost:5001/api/Operacao
   }
 }
 
-
-
-
-3°
+4° <br>
 http://localhost:5001/api/Transacao
 {
   "operation": "transfer",
