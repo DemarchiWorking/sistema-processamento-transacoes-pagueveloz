@@ -19,7 +19,7 @@ Rio de Janeiro
 
 
 Link: https://github.com/DemarchiWorking/sistema-processamento-transa-es-pagueveloz
-Documento: https://github.com/DemarchiWorking/sistema-processamento-transacoes-pagueveloz/blob/main/DesafioPagueVeloz.docx.pdf
+https://github.com/DemarchiWorking/sistema-processamento-transacoes-pagueveloz/blob/main/DesafioPagueVeloz.docx.pdf
 
 Instalar o Docker, iniciar o ambiente virtualizado
 Baixar os projetos com todos arquivos
